@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        // a keyword 'import' tem como função importar a função declarada
+        // import <nome da função>
+        // sendo necessario dizer de onde vem, de onde é a função chamada, e o 'from' faz isso.
+        // O 'from' é usado para mapear onde se encontra a função que se deja usar
+        // import <nome da função>  from '<caminho> <nome do arquivo>'  
+        import ExibeSumLog from 'js/sum.js';
+        import ExibeMinusLog from './minus.js';  // se o arquivo não esta em outra pasta, deve-se colocar '.'      
+        
+        ExibeSumLog();
+        ExibeMinusLog();        
+    </script>
+</body>
+</html>
